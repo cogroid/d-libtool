@@ -55,22 +55,73 @@ sudo apt install clang
 ### Build for x64 machine
 
 ```
+sudo apt update
 cd ${LIBTOOL_DIR}/make/x64
-make
+make > build.log&
+```
+
+```
+sudo apt update
+cd ${LIBTOOL_DIR}/make/x64
+make install
+```
+
+```
+Built files are at /home/cogroid/local/libtool/x64
 ```
 
 ### Build for i386 machine
 
 ```
+sudo apt update
 cd ${LIBTOOL_DIR}/make/i386
-make
+make > build.log&
+```
+
+```
+sudo apt update
+cd ${LIBTOOL_DIR}/make/i386
+make install
+```
+
+```
+Built files are at /home/cogroid/local/libtool/i386
 ```
 
 ### Build for armv7-a machine
 
 ```
+sudo apt update
 cd ${LIBTOOL_DIR}/make/armv7
-make
+make > configure.log&
+```
+
+```
+sudo apt update
+cd ${LIBTOOL_DIR}/make/armv7
+make build > build-a.log&
+```
+
+```
+sudo apt update
+cd ${LIBTOOL_DIR}/make/armv7
+make update_makefile
+```
+
+```
+sudo apt update
+cd ${LIBTOOL_DIR}/make/armv7
+make build > build-b.log&
+```
+
+```
+sudo apt update
+cd ${LIBTOOL_DIR}/make/armv7
+make install
+```
+
+```
+Built files are at /home/cogroid/local/libtool/armv7
 ```
 
 ---
