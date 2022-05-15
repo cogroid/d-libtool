@@ -88,7 +88,13 @@ make install
 Built files are at /home/cogroid/local/libtool/i386
 ```
 
-### Build for armv7-a machine
+### Build for armv7 machine
+
+Set APP_PKG to package name of your android app.
+
+```
+export APP_PKG=com.cogroid.atomspace.tester
+```
 
 ```
 sudo apt update
@@ -99,19 +105,7 @@ make > configure.log&
 ```
 sudo apt update
 cd ${LIBTOOL_DIR}/make/armv7
-make build > build-a.log&
-```
-
-```
-sudo apt update
-cd ${LIBTOOL_DIR}/make/armv7
-make update_makefile
-```
-
-```
-sudo apt update
-cd ${LIBTOOL_DIR}/make/armv7
-make build > build-b.log&
+make build > build.log
 ```
 
 ```
